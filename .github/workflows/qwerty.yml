@@ -23,10 +23,10 @@ jobs: # Секция jobs определяет этапы процесса
       - name: Checkout # Шаг для получения доступа к репозиторию
         uses: actions/checkout@v4 # Данный шаг использует готовый workflow actions/checkout@v4: он клонирует текущий коммит репозитория. Таким образом, раннеру становится доступен исходный код проекта
       - name: Set up Node # Шаг для указания используемой версии Node.js
-      uses: actions/setup-node@v4
-      with:
-      node-version: 18 # Использовать будем 18-ю версию Node.js
-      cache: 'npm'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Использовать будем 18-ю версию Node.js
+          cache: 'npm'
       - name: Install dependencies # Шаг установки зависимостей
         run: npm ci # В ключе run хранится команда, которая будет выполнена в терминале окружения на раннере
       - name: Run test # Запускаем тесты
