@@ -14,7 +14,7 @@ permissions:
   id-token: write # Разрешаем использовать GITHUB_TOKEN
 
 env: 
-PABLIC_PATH: /github_actions/ 
+  PABLIC_PATH: /github_actions/ 
 
 jobs: # Секция jobs определяет этапы процесса
  
